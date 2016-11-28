@@ -49,6 +49,7 @@
                      objc-mode
                      latex-mode
                      js-mode
+                     php-mode
                      plain-tex-mode))
            (let ((mark-even-if-inactive transient-mark-mode))
              (indent-region (region-beginning) (region-end) nil))))))

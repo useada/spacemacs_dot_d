@@ -21,6 +21,7 @@
 (spacemacs|defvar-company-backends json-mode)
 (spacemacs|defvar-company-backends graphviz-dot-mode)
 (spacemacs|defvar-company-backends typescript-mode)
+(spacemacs|defvar-company-backends php-mode)
 
 (spacemacs|add-toggle iimage
   :status iimage-mode

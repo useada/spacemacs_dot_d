@@ -58,7 +58,8 @@ values."
                       :disabled-for org markdown)
      (osx :variables osx-dictionary-dictionary-choice "Simplified Chinese - English")
      restclient
-     (gtags :disabled-for clojure emacs-lisp javascript latex python shell-scripts)
+     ;; (gtags :disabled-for clojure emacs-lisp javascript latex python shell-scripts)
+     cscope
      (shell :variables shell-default-shell 'eshell)
      docker
      ;; latex
@@ -178,13 +179,6 @@ values."
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
                          monokai
-                         flatland
-                         reverse
-                         leuven
-                         zenburn
-                         spolsky
-                         seti
-                         hemisu-dark
                          spacemacs-dark
                          spacemacs-light
                          solarized-light
