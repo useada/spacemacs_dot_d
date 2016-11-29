@@ -31,6 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     imenu-list
      ivy
      better-defaults
      github
@@ -58,7 +59,7 @@ values."
                       :disabled-for org markdown)
      (osx :variables osx-dictionary-dictionary-choice "Simplified Chinese - English")
      restclient
-     ;; (gtags :disabled-for clojure emacs-lisp javascript latex python shell-scripts)
+     (gtags :disabled-for clojure emacs-lisp javascript latex python shell-scripts)
      cscope
      (shell :variables shell-default-shell 'eshell)
      docker
@@ -187,8 +188,9 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size 16
+   ;; dotspacemacs-default-font '("Source Code Pro"
+   dotspacemacs-default-font '("Monaco"
+                               :size 14
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -391,7 +393,7 @@ values."
   (add-hook 'doc-view-mode-hook 'auto-revert-mode)
 
   ;; temp fix for ivy-switch-buffer
-  ;; (spacemacs/set-leader-keys "bb" 'helm-mini)
+  (spacemacs/set-leader-keys "bb" 'helm-mini)
 
   (global-hungry-delete-mode t)
   (spacemacs|diminish helm-gtags-mode)

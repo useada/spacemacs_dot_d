@@ -179,3 +179,7 @@
   (global-set-key (kbd "s-n") 'make-frame)
   (global-set-key (kbd "s-z") 'undo-tree-undo)
   (global-set-key (kbd "s-Z") 'undo-tree-redo))
+
+;; for gtags
+(spacemacs/set-leader-keys "yd" 'ggtags-find-definition)
+(spacemacs/set-leader-keys "yr" 'ggtags-find-reference)
